@@ -3,7 +3,19 @@ public class ClassesAndObjekts2 {
         Person person1 = new Person();
         person1.setName("John");
         person1.setAge(50);
+        person1.sayHello();
         person1.speak();
+        int year1 = person1.calculateYearsToRetirement();
+
+        Person person2 = new Person();
+        person2.setName("Bob");
+        person2.setAge(35);
+        person2.sayHello();
+        person2.speak();
+        int year2 = person2.calculateYearsToRetirement();
+
+        System.out.println("John to retirement: "+year1+" years");
+        System.out.println("Bob to retirement: "+year2+" years");
 
     }
 }
@@ -12,21 +24,21 @@ class Person{
     private String name;
     private int age;
 
-    public void setName(String userName){
-        if(userName.isEmpty()){
+    public void setName(String name){
+        if(name.isEmpty()){
             System.out.println("This figure is not mast be empty!");
         }else{
-            name = userName;
+            this.name = name;
         }
     }
     public String getName(){
         return name;
     }
-    public void setAge(int userAge){
-        if(userAge<0){
+    public void setAge(int age){
+        if(age<0){
             System.out.println("Age mast be more than zero!");
         }else{
-            age = userAge;
+            this.age = age;
         }
     }
     public int getAge(){
