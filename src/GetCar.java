@@ -11,6 +11,22 @@ public class GetCar {
         car2.setColor("white");
         car2.setPower(350);
         car2.getInfo();
+
+        Moto moto = new Moto();
+        moto.setName("Harley Davidson");
+        moto.setPrice(10000);
+        moto.getInfo();
+
+        TV tv = new TV();
+        tv.setName("Sony");
+        tv.setPrice(5000);
+        tv.getInfo();
+
+        Audio au = new Audio();
+        au.setName("Benq & Olufsen");
+        au.setPrice(15000);
+        au.getInfo();
+
     }
 }
 
@@ -35,3 +51,49 @@ class Car{
     }
 }
 
+class Moto{
+    private String name;
+    private int price;
+
+    public void setName(String name){
+        this.name = name;
+    }
+    public void setPrice(int price){
+        this.price = price;
+    }
+    public void getInfo(){
+        System.out.println("My Moto is "+name+", that price is "+price+" US dollars");
+    }
+}
+
+class TV{
+    private String name;
+    private int price;
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public void getInfo(){
+        System.out.println("My TV is "+name+", price is "+price+" US dollars");
+    }
+}
+
+class Audio{
+    private String name;
+    private int price;
+
+    public void setName(String name){
+        this.name = name;
+    }
+    public void setPrice(int price){
+        this.price = price;
+    }
+
+    public void getInfo(){
+        System.out.println("My audio system is "+name+", price is "+price+" US dollars");
+    }
+}
