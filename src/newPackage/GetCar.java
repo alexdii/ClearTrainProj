@@ -1,3 +1,5 @@
+package newPackage;
+
 public class GetCar {
     public static void main(String[] args) {
         Car car1 = new Car();
@@ -62,7 +64,7 @@ class Moto{
         this.price = price;
     }
     public void getInfo(){
-        System.out.println("My Moto is "+name+", that price is "+price+" US dollars");
+        System.out.println("My newPackage.Moto is "+name+", that price is "+price+" US dollars");
     }
 }
 
@@ -78,7 +80,7 @@ class TV{
     }
 
     public void getInfo(){
-        System.out.println("My TV is "+name+", price is "+price+" US dollars");
+        System.out.println("My newPackage.TV is "+name+", price is "+price+" US dollars");
     }
 }
 
