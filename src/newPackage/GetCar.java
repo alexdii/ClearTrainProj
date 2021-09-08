@@ -3,7 +3,7 @@ package newPackage;
 public class GetCar {
     public static void main(String[] args) {
         Car car1 = new Car();
-        car1.setName("Mersedes");
+        car1.setName("Mercedes");
         car1.setColor("black");
         car1.setPower(250);
         car1.getInfo();
@@ -87,7 +87,6 @@ class TV{
 class Audio{
     private String name;
     private int price;
-
     public void setName(String name){
         this.name = name;
     }
