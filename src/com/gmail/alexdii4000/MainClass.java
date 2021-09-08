@@ -11,6 +11,12 @@ public class MainClass {
         cat.id = 2;
         cat.getInfo(cat.name, cat.id);
         cat.canMiau();
+        Dog dog = new Dog();
+        dog.name = "Mikky";
+        dog.id = 3;
+        dog.getInfo(dog.name, dog.id);
+        dog.canBark();
+
 
     }
 }
